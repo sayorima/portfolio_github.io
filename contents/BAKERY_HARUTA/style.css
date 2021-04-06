@@ -1,0 +1,422 @@
+@charset "utf-8";
+
+/* ========================================
+    リセットcss
+========================================= */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-style:normal;
+	font-weight: normal;
+	font-size: 100%;
+	vertical-align: baseline;
+}
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+html{overflow-y: scroll;}
+blockquote, q {quotes: none;}
+blockquote:before, blockquote:after,q:before, q:after {content: ''; content: none;}
+input, textarea,{margin: 0; padding: 0;}
+ol, ul{list-style:none;}
+table{border-collapse: collapse; border-spacing:0;}
+caption, th{text-align: left;}
+a:focus {outline:none;}
+
+/* micro clearfix */
+.cf:before,
+.cf:after {
+    content: " ";
+    display: table;
+}
+.cf:after {clear: both;}
+.cf {*zoom: 1;}
+
+
+
+/* ========================================
+    全体
+========================================= */
+
+body {
+	font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", "メイリオ", sans-serif;
+}
+
+
+
+/* ========================================
+    ヘッダー
+========================================= */
+
+header div#header_inner {
+	width: 964px;
+	height: 42px;
+	margin: 0 auto;
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+
+header div#header_inner h1 {
+	width: 200px;
+	height: 43px;
+	float: left;
+}
+
+header nav {
+	float: right;
+	padding-top: 28px;
+}
+
+header nav ul li {
+	float: left;
+	font-size: 12px;
+	padding-left: 40px;
+}
+
+header nav ul li a {
+	text-decoration: none;
+	color: black;
+}
+
+header nav ul li a:hover {
+	opacity: 0.6;
+}
+
+
+/* ========================================
+    メイン画像
+========================================= */
+
+div#main_image {
+	width: 964px;
+	height: 560px;
+	margin: 0 auto 60px auto;
+}
+
+/* ========================================
+    おしらせ
+========================================= */
+
+div#news {
+	width: 872px;
+	height: auto;
+	margin: 0 auto;
+}
+
+div#news_inner h2 {
+	font-size: 16px;
+	letter-spacing: 0.05em;
+	float: left;
+	width: 155px;
+	height: 100px;
+	font-weight: bold;
+	padding-top: 46px;
+
+}
+
+div#news_inner ul li {
+	font-size: 14px;
+	float: left;
+	padding-bottom: 20px;
+}
+
+div#news_inner ul li:first-child {
+	margin-top: 5px;
+}
+
+div#news_inner ul li:last-child {
+	float: right;
+	margin-top: 40px;
+}
+
+
+div#news_inner ul li span {
+	padding-right: 60px;
+}
+
+ul li a {
+	text-decoration: none;
+	color: black;
+}
+
+ul li a:hover {
+	opacity: 0.6;
+}
+
+ul li#news_more a {
+	text-decoration: none;
+	color: black;
+	border-bottom: 1px solid black;
+}
+
+ul li#news_more a:hover{
+	opacity: 0.6;
+}
+
+
+/* ========================================
+    ベーカリーハルタについて
+========================================= */
+
+div#about {
+	width: 872px;
+	height: auto;
+	margin: 80px auto 0 auto;
+}
+
+div#about ul li#about1 {
+	width: 872px;
+	height: 310px;
+}
+
+div#about ul li#about1 img {
+	float: left;
+	margin-right: 46px;
+}
+
+div#about ul li span {
+	font-size: 14px;
+	line-height: 28px;
+	display: block;
+	text-align: justify;
+	text-justify: inter-ideograph;
+	padding-top: 60px;
+}
+
+div#about ul li#about2 {
+	width: 872px;
+	height: 310px;
+	margin-top: 60px;
+}
+
+div#about ul li#about2 img {
+	float: right;
+	margin-left: 46px;
+}
+
+div#more_button1 {
+	font-size: 14px;
+	width: 240px;
+	height: 30px;
+	text-align: center;
+	line-height: 30px;
+	background-color: rgba(163,66,8,0.1);
+	margin-top: 20px;
+
+}
+
+div#more_button1 a {
+	text-decoration: none;
+	color: black;
+}
+
+div#more_button1 a:hover {
+	opacity: 0.6;
+}
+
+
+/* ========================================
+    オススメ定番商品
+========================================= */
+
+div#pickup {
+	width: 872px;
+	height: auto;
+	margin: 150px auto 0 auto;
+}
+
+div#pickup h2 {
+	margin-bottom: 40px;
+}
+
+div#pickup ul li {
+	width: 872px;
+	height: 300px;
+	margin-bottom: 10px;
+}
+
+.pickup_image1 {
+	float: left;
+} 
+
+.pickup_image2 {
+	float: right;
+} 
+
+.pickup_text  {
+	font-size: 13px;
+	width: 872px;
+	height: 66px;
+	margin-bottom: 40px;
+}
+
+.pickup_text span {
+	font-size: 14px;
+	font-weight: bold;
+	width: 872px;
+	height: 14px;
+	line-height: 14px;
+	display: inline-block;
+}
+
+.pickup_text p {
+	width: 872px;
+	height: 35px;
+	display: inline-block;
+	line-height: 20px;
+	margin-top: 5px;
+	background-image: linear-gradient(to right, #000, #000 2px, transparent 1px, transparent 4px);
+	background-size: 8px 1px;
+	background-position: bottom;
+	background-repeat: repeat-x;
+	padding-bottom: 20px;
+}
+
+#more_button2 {
+	margin: 40px auto 0 auto;
+	display: block;
+	text-align: right;
+	font-size: 14px;
+}
+
+#more_button2 a {
+	text-decoration: none;
+	color: black;
+	border-bottom: 1px solid black;
+}
+
+#more_button2 a:hover {
+	opacity: 0.6;
+}
+
+
+/* ========================================
+    店舗情報
+========================================= */
+
+div#shop_info {
+	width: 872px;
+	height: auto;
+	margin: 120px auto 0 auto;
+}
+
+div#shop_info h2 {
+	font-size: 16px;
+	letter-spacing: 0.1em;
+	margin-bottom: 20px;
+	width: 842px;
+	height: 40px;
+	background-color: rgba(163,66,8,0.1);
+	line-height: 40px;
+	text-align: right;
+	padding-right: 30px;
+	border-radius: 5px;
+
+}
+
+div#shop_info ul li img {
+	float: left;
+}
+
+
+div#shop_info ul li span {
+	width: 555px;
+	height: 379px;
+	display: block;
+	float: right;
+	border-radius: 5px;
+	background-color: rgba(163,66,8,0.1);
+	line-height: 379px;
+	text-align: center;
+	font-size: 13px;
+}
+
+div#shop_info_text {
+	display: block;
+	margin-top: 30px;
+}
+
+div#shop_info_text span {
+	font-size: 16px;
+	font-weight: bold;
+	letter-spacing: 0.05em;	
+	display: inline-block;
+	padding-bottom: 10px;	
+	margin-top: 20px;
+}
+
+div#shop_info_text p {
+	font-size: 13px;
+}
+
+p#text_space {
+	line-height: 35px;	
+}
+
+
+/* ========================================
+    フッター
+========================================= */
+
+footer {
+    width: 100%;
+    height: 170px;
+    background: url(images/BAKERY-HARUTA_footer.jpg);
+    margin-top: 80px;
+}
+
+footer div#footer_inner {
+	width: 964px;
+	height: 122px;
+	margin: 0 auto 10px auto;
+} 
+
+footer div#footer_inner h2 {
+	width: 200px;
+	height: 43px;
+	float: left;
+	padding-top: 28px;
+}
+
+footer nav ul {
+	float: right;
+	padding-top: 30px;
+}
+
+footer nav ul li {
+	float: left;
+	font-size: 12px;
+	padding-left: 40px;
+}
+
+footer nav ul li a {
+	text-decoration: none;
+	color: #fff;
+}
+
+footer nav ul li a:hover {
+	opacity: 0.6;
+}
+
+footer p {
+	font-size:11px;
+	color: #fff;
+	letter-spacing: 0.1em;
+	text-align: center;
+}
+
+
