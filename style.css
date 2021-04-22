@@ -1,0 +1,736 @@
+@charset "utf-8";
+
+/* ========================================
+    リセットcss
+========================================= */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-style:normal;
+	font-weight: normal;
+	font-size: 100%;
+	vertical-align: baseline;
+}
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+html{overflow-y: scroll;}
+blockquote, q {quotes: none;}
+blockquote:before, blockquote:after,q:before, q:after {content: ''; content: none;}
+input, textarea,{margin: 0; padding: 0;}
+ol, ul{list-style:none;}
+table{border-collapse: collapse; border-spacing:0;}
+caption, th{text-align: left;}
+a:focus {outline:none;}
+
+/* micro clearfix */
+.cf:before,
+.cf:after {
+    content: " ";
+    display: table;
+}
+.cf:after {clear: both;}
+.cf {*zoom: 1;}
+
+
+/* ========================================
+    全体
+========================================= */
+
+body {
+	font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", "メイリオ", sans-serif;
+}
+
+
+
+
+/* ========================================
+    TOP_PAGE
+========================================= */
+
+#top_wrapper {
+	width: 1033px;
+	height: 143px;
+	margin: 250px auto;
+}
+
+#top_wrapper h1 {
+	width: 254px;
+	height: 143px;
+	padding-top: 46px;
+	float: left;
+
+}
+
+#top_wrapper nav {
+	width: 108px;
+	height: 143px;
+	float: left;
+	margin-left: 100px;
+	border-left: 1px solid #000000;
+	padding-left: 40px;
+}
+
+
+#top_wrapper nav ul li {
+	font-family: Avenir Next, sans-serif;
+	font-weight: 300;
+	font-style: normal;
+	letter-spacing: 0.1em;
+	font-size: 20px;
+	line-height: 49px;
+}
+
+#top_wrapper nav ul li a {
+	text-decoration: none;
+	color: #000000;
+}
+
+#top_wrapper nav ul li a:hover {
+	border-bottom: 2px solid #000000;
+}
+
+
+#top_name {
+	font-family: Avenir Next, sans-serif;
+	font-weight: 300;
+	font-style: normal;
+	text-align: right;
+	letter-spacing: 0.15em;
+	padding-top: 110px;
+	font-size: 20px;
+}
+
+#top_page p {
+	font-size: 11px;
+	text-align: center;
+	letter-spacing: 0.05em;
+}
+
+
+/* ========================================
+    WORKS WEB SITE 一覧
+========================================= */
+
+/* 共通ヘッダー ここから */
+
+#header_wrapper {
+	width: 1192px;
+	height: 40px;
+	margin: 60px auto 120px auto;
+}
+
+#header_wrapper h1 {
+	width: 202px;
+	height: 40px;
+	float: left;
+}
+
+#header_wrapper nav {
+	height: 345px;
+	height: 14px;
+	float: right;
+	padding-top: 25px;
+}
+
+#header_wrapper nav ul li {
+	font-family: Avenir Next, sans-serif;
+	font-weight: 600;
+	font-style: normal;
+	letter-spacing: 0.1em;
+	font-size: 14px;
+	float: left;
+	padding-left: 70px;
+}
+
+#header_wrapper nav ul li a {
+	text-decoration: none;
+	color: #000000;
+	font-weight: 600;
+}
+
+#header_wrapper nav ul li a:hover {
+	border-bottom: 2px solid #000000;
+}
+
+
+#header_wrapper2 {
+	width: 1192px;
+	height: 88px;
+	text-align: center;
+	margin: 0 auto 120px auto;
+}
+
+
+#header_wrapper2 h2 {
+	text-align: center;
+}
+
+.top_text {
+	font-size: 13px;
+	letter-spacing: 0.05em;
+	width: 461px;
+	height: 33px;
+	float: left;
+	margin-top: 20px;
+	line-height: 22px;
+	text-align: center;
+	padding-left: 367px;
+}
+
+.works_sub_nav {
+	font-family: Avenir Next, sans-serif;
+	font-weight: 300;
+	font-style: normal;
+	letter-spacing: 0.1em;
+	font-size: 14px;
+	float: right;
+	margin-top: 28px;
+	padding-top: 18px;
+}
+
+.works_sub_nav a {
+	text-decoration: none;
+	color: #000000;
+}
+
+.works_sub_nav a:last-child {
+	padding-left: 60px;
+}
+
+.works_sub_nav a:hover {
+	opacity: 0.5;
+}
+
+/* 共通ヘッダー ここまで */
+
+
+
+/* ========================================
+    ABOUT
+========================================= */
+
+#plofile {
+	width: 832px;
+	height: auto;
+	margin: -60px auto 0 auto;
+}
+
+#plofile h1 {
+	margin-bottom: 60px;
+}
+
+#plofile h3 {
+	width: 832px;
+	height: 164px;
+	font-size: 14px;
+	letter-spacing: 0.05em;
+	line-height: 30px;
+	text-align: justify;
+	text-justify: inter-ideograph;
+	margin-top: 20px;
+	margin-bottom: 100px;
+}
+
+#skill h2 {
+	margin-bottom: 40px;
+}
+
+#skill h3 {
+	margin-bottom: 100px;
+	width: 832px;
+	height: 375px;
+}
+
+#strengths h2 {
+	margin-bottom: 40px;
+}
+
+#strengths ul li {
+	font-size: 14px;
+	background: url(images/portfolio_about_check_icon.png) no-repeat;
+	padding-left: 50px;
+	margin-bottom: 20px;
+	letter-spacing: 0.05em;
+}
+
+#goal ul li {
+	font-size: 14px;
+	letter-spacing: 0.05em;
+	background: url(images/portfolio_about_goal_icon.png) no-repeat;
+	background-position: left 0 bottom 20px;
+	padding-left: 50px;
+	margin-top: 80px;
+	line-height: 30px;
+	margin-bottom: 200px;
+}
+
+
+/* ========================================
+    WORKS WEB SITE 一覧
+========================================= */
+
+.grid {
+	display: grid;
+	grid-template-columns: 1fr 1fr; /*　2列  */
+	grid-column-gap: 73px; /*  横間隔　*/
+	grid-row-gap: 100px;  /*  縦間隔　*/
+	width: 1192px;
+	height: 2200px;
+	margin: 0 auto;
+}
+
+
+.list_text {
+	font-size: 11px;
+	letter-spacing: 0.05em;
+	color: #6c6c6c;
+}
+
+.list_img a:hover {
+	opacity: 0.9;
+}
+
+.list_text a {
+	text-decoration: none;
+	color: #2a62ef;
+	font-weight: bold;
+}
+
+.list_text a:hover {
+	opacity: 0.6;
+}
+
+
+/* ========================================
+    WORKS BANNER 一覧
+========================================= */
+
+.grid_b {
+	display: grid;
+	grid-template-columns: 1fr 1fr; /*　2列  */
+	grid-column-gap: 72px; /*  横間隔　*/
+	grid-row-gap: 72px;  /*  縦間隔　*/
+	width: 1032px;
+	height: 1580px;
+	margin: 0 auto 120px auto;
+}
+
+.grid_b2 {
+	display: grid;
+	grid-template-columns: 1fr 1fr; /*　2列  */
+	grid-column-gap: 34px; /*  横間隔　*/
+	grid-row-gap: 40px;  /*  縦間隔　*/
+	width: 1032px;
+	height: 1262px;
+	margin: 0 auto 80px auto;
+}
+
+.grid_b3 {
+	display: grid;
+	grid-template-columns: 1fr 1fr; /*　2列  */
+	grid-column-gap: 34px; /*  横間隔　*/
+	width: 1032px;
+	height: 220px;
+	margin: 0 auto 40px auto;
+}
+
+
+.grid_b4 {
+	display: grid;
+	grid-template-columns: 1fr 1fr; /*　2列  */
+	grid-column-gap: 34px; /*  横間隔　*/
+	width: 1032px;
+	height: 188px;
+	margin: 0 auto 150px auto;
+}
+
+
+/* ========================================
+    WORKS WEB SITE  01
+========================================= */
+
+#container_p1 {
+    display: grid; /* グリッドレイアウト */
+    grid-template-rows: 100px 365px 440px;
+    grid-template-columns: 380px 1fr;
+    grid-template-areas:
+        "areaA areaB"
+        "areaA areaC"
+        "areaA areaD";
+     width: 1034px;
+     height: 978px;
+     margin: 0 auto;
+     column-gap: 60px;
+     grid-row-gap: 40px;
+}
+
+#itemA_p1 {
+    grid-row: 1 / 4;
+    grid-column: 1 / 2;
+    grid-area: areaA;
+}
+
+#itemB_p1 {
+    grid-row: 1 / 2;
+    grid-column: 2 / 3;
+    grid-area: areaB;
+}
+
+#itemC_p1 {
+    grid-row: 2 / 3;
+    grid-column: 2 / 3;
+    grid-area: areaC;
+}
+
+#itemD_p1 {
+    grid-row: 3 / 4;
+    grid-column: 2 / 3;
+    grid-area: areaD;
+}
+
+/*  共通　*/
+
+#description ul li dl {
+	width: 640px;
+	height: auto;
+	margin: 100px auto 20px auto;
+	font-size: 14px;
+	letter-spacing: 0.05em;
+}
+
+#description ul li dl dt {
+	text-align: center;
+}
+
+#description ul li dl dd {
+	line-height: 30px;
+	padding-top: 30px;
+	text-align: justify;
+	text-justify: inter-ideograph;
+}
+
+/* ========================================
+    WORKS WEB SITE  02
+========================================= */
+
+#container_p2 {
+    display: grid; /* グリッドレイアウト */
+    grid-template-rows: 100px 438px 360px;
+    grid-template-columns: 380px 1fr;
+    grid-template-areas:
+        "areaA areaC"
+        "areaA areaD"
+        "areaB areaD";
+     width: 1034px;
+     height: 978px;
+     margin: 0 auto;
+     column-gap: 60px;
+     grid-row-gap: 40px;
+}
+
+
+#itemA_p2 {
+    grid-row: 1 / 3;
+    grid-column: 1 / 2;
+    grid-area: areaA;
+}
+
+#itemB_p2 {
+    grid-row: 3 / 4;
+    grid-column: 1 / 2;
+    grid-area: areaB;
+}
+
+
+#itemC_p2 {
+    grid-row: 1 / 2;
+    grid-column: 2 / 3;
+    grid-area: areaC;
+}
+
+#itemD_p2 {
+    grid-row: 2 / 4;
+    grid-column: 2 / 3;
+    grid-area: areaD;
+}
+
+
+/* ========================================
+    WORKS WEB SITE  03
+========================================= */
+
+#itemA_p3 {
+	width: 1034px;
+	height: 2028px;
+	margin: 0 auto 40px auto;
+}
+
+#itemB_p3 {
+	width: 1034px;
+	height: 705px;
+	margin: 0 auto;
+}
+
+#itemC_p3 {
+	width: 1034px;
+	height: 705px;
+	margin: 30px auto 0 auto;
+}
+
+#itemB_p3 p, #itemC_p3 p {
+	font-size: 12px;
+	color: #6c6c6c;
+	text-align: right;
+	line-height: 0;
+	padding-top: 10px;
+	letter-spacing: 0.05em;
+}
+
+#description dt span {
+	line-height: 40px;
+}
+
+
+/* ========================================
+    WORKS WEB SITE  04 (LP)
+========================================= */
+
+#container_p4 {
+    display: grid; /* グリッドレイアウト */
+    grid-template-rows: 100px 838px 382px 266px auto;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+        "areaA areaC"
+        "areaA areaD"
+        "areaA areaE"
+        "areaB areaE"
+        "areaB areaF";
+     width: 1034px;
+     height: 1848px;
+     margin: 0 auto;
+     column-gap: 60px;
+     grid-row-gap: 40px;
+
+}
+
+#itemA_p4 {
+    grid-row: 1 / 4;
+    grid-column: 1 / 2;
+    grid-area: areaA;
+}
+
+#itemB_p4 {
+    grid-row: 4 / 6;
+    grid-column: 1 / 2;
+    grid-area: areaB;
+    margin-top: -80px;
+}
+
+#itemC_p4 {
+    grid-row: 1 / 2;
+    grid-column: 2 / 3;
+    grid-area: areaC;
+}
+
+#itemD_p4 {
+    grid-row: 2 / 3;
+    grid-column: 2 / 3;
+    grid-area: areaD;
+}
+
+#itemE_p4 {
+    grid-row: 3 / 5;
+    grid-column: 2 / 3;
+    grid-area: areaE;
+}
+
+#itemF_p4 {
+    grid-row: 5 / 6;
+    grid-column: 2 / 3;
+    grid-area: areaF;
+    margin-top: -120px;
+}
+
+
+/* ========================================
+    WORKS WEB SITE  05
+========================================= */
+
+#container_p5 {
+    display: grid; /* グリッドレイアウト */
+    grid-template-rows: 100px 611px 472px auto;
+    grid-template-columns: 380px 1fr;
+    grid-template-areas:
+        "areaA areaC"
+        "areaA areaD"
+        "areaA areaE"
+        "areaB areaE";
+     width: 1034px;
+     height: 1430px;
+     margin: 0 auto;
+     column-gap: 60px;
+     grid-row-gap: 40px;
+}
+
+#itemA_p5 {
+    grid-row: 1 / 4;
+    grid-column: 1 / 2;
+    grid-area: areaA;
+}
+
+#itemB_p5 {
+    grid-row: 4 / 5;
+    grid-column: 1 / 2;
+    grid-area: areaB;
+    margin-top: -80px;
+}
+
+#itemC_p5 {
+    grid-row: 1 / 2;
+    grid-column: 2 / 3;
+    grid-area: areaC;
+}
+
+#itemD_p5 {
+    grid-row: 2 / 3;
+    grid-column: 2 / 3;
+    grid-area: areaD;
+}
+
+#itemE_p5 {
+    grid-row: 3 / 5;
+    grid-column: 2 / 3;
+    grid-area: areaE;
+}
+
+
+.link_text {
+	width: 1034px;
+	height: auto;
+	margin: 0 auto;
+	font-size: 14px;
+	padding-top: 5px;
+	text-align: right;
+	letter-spacing: 0.05em;
+}
+
+.link_text a {
+	text-decoration: none;
+	color: #2a62ef;
+}
+
+.link_text a:hover {
+	opacity: 0.6;
+}
+
+
+/* ========================================
+    WORKS WEB SITE  06
+========================================= */
+
+#itemA_p6 {
+	width: 1034px;
+	height: 804px;
+	margin: 0 auto 40px auto;
+}
+
+#itemB_p6 {
+	width: 1034px;
+	height: 688px;
+	margin: 0 auto;
+}
+
+/* ========================================
+    CONTACT
+========================================= */
+ 
+#header_wrapper2_contact {
+	margin-bottom: 100px;
+	width: 1192px;
+	height: 88px;
+	text-align: center;
+	margin: 0 auto;
+}
+
+
+/* ========================================
+    前後ページ　アイコン
+========================================= */
+
+#next_icon_1 {
+	width: 1034px;
+	height: 31px;
+	margin: 0 auto;
+	text-align: right;
+}
+
+#next_icon {
+	width: 1034px;
+	height: 31px;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+}
+
+#next_icon a:hover, #next_icon_1 a:hover {
+	opacity: 0.6;
+}
+
+
+/* ========================================
+    フッター
+========================================= */
+
+.footer_nav {
+	width: 1192px;
+	height: 30px;
+	margin: 0 auto;
+	margin-top: 70px;
+}
+
+
+.footer_nav nav ul li {
+	font-size: 11px;
+	letter-spacing: 0.05em;
+	float: right;
+	padding-left: 30px;
+	font-family: Avenir Next, sans-serif;
+	font-weight: 300;
+	font-style: normal;
+}
+
+
+
+.footer_nav nav ul li a {
+	text-decoration: none;
+	color: #6c6c6c;
+}
+
+.footer_nav nav ul li a:hover {
+	opacity: 0.6;
+}
+
+
+.copyright {
+	text-align: center;
+	font-size: 11px;
+	letter-spacing: 0.05em;
+	margin-bottom: 40px;
+}
+
+
